@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+.venv/
+venv/
+
+# Pytest
+.pytest_cache/
+
+# Playwright
+playwright-report/
+test-results/
+screenshots/
+videos/
+traces/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
