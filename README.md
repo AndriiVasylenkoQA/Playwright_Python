@@ -10,24 +10,17 @@ basic test structure, assertions, and reporting.
 - Requests (for API tests)
 
 ## Project Structure
-├── tests
-│   ├── ui
-│   │   └── test_login.py
-│   ├── api
-│   │   └── test_get.py
-│   │   └── test_post.py
-│   │   └── test_put.py
-│   │   └── test_delete.py
-├── pages
-│   └── login_page.py
-│   └── welcome_page.py
-├── .github
-│   ├── worklows
-│   │   └── test.yml
-├── conftest.py
-├── pytest.ini
-├── requirements.txt
-└── README.md
+tests/
+├── ui/
+│   └── test_login.py
+├── api/
+│   ├── test_get.py
+│   ├── test_post.py
+│   ├── test_put.py
+│   └── test_delete.py
+pages/
+├── login_page.py
+└── welcome_page.py
 
 ## Installation
 
