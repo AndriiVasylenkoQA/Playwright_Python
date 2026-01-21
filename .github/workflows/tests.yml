@@ -25,7 +25,7 @@ jobs:
       - name: Install Playwright browsers
         run: playwright install
 
-      - name: Run API tests
+      - name: Run API&UI tests
         env:
           REQRES_API_KEY: ${{ secrets.REQRES_API_KEY }}
         run: |
