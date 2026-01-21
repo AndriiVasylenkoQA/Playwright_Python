@@ -10,6 +10,7 @@ basic test structure, assertions, and reporting.
 - Requests (for API tests)
 
 ## Project Structure
+```text
 tests/
 ├── ui/
 │   └── test_login.py
@@ -21,6 +22,7 @@ tests/
 pages/
 ├── login_page.py
 └── welcome_page.py
+```
 
 ## Installation
 
