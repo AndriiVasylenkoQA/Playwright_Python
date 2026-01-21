@@ -14,13 +14,13 @@ basic test structure, assertions, and reporting.
 │   ├── ui
 │   │   └── test_login.py
 │   ├── api
-│   │   └── test_get_api.py
-│   │   └── test_post_api.py
-│   │   └── test_put_api.py
-│   │   └── test_delete_api.py
+│   │   └── test_get.py
+│   │   └── test_post.py
+│   │   └── test_put.py
+│   │   └── test_delete.py
 ├── pages
-│   └── test_task_login_page.py
-│   └── test_task_welcome_page.py
+│   └── login_page.py
+│   └── welcome_page.py
 ├── .github
 │   ├── worklows
 │   │   └── test.yml
