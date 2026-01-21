@@ -8,10 +8,6 @@ class LoginPage:
         self.password_input = page.locator("#password")
         self.login_button = page.get_by_role("button", name="Login")
 
-    def wait_until_login_element_displayed(self, page:Page):
-        self.page = page
-        page.locator("#username").wait_for()
-
     def enter_username(self, username: str):
         self.username_input.fill(username)
 

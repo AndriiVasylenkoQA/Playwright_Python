@@ -1,7 +1,5 @@
-BASE_URL = "https://reqres.in/api/users/2"
-
 def test_get_user(api_session):
-    response = api_session.get(BASE_URL)
+    response = api_session.get(api_session.base_url + "/2")
 
     assert response.status_code == 200
     body = response.json()

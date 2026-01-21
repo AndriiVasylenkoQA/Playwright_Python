@@ -3,10 +3,12 @@ import pytest
 import requests
 from playwright.sync_api import sync_playwright
 
+BASE_URL = "https://reqres.in/api/users"
+
 @pytest.fixture(scope="session")
 def browser():
    with sync_playwright() as p:
-       browser = p.chromium.launch(headless=False)
+       browser = p.chromium.launch(headless=True)
        yield browser
        browser.close()
 
@@ -19,7 +21,7 @@ def page(browser):
 @pytest.fixture(scope="session")
 def api_session():
     session = requests.Session()
-    # api_key = "reqres_4423e81095054985a35a5db26eed15a8"
+    session.base_url = BASE_URL
     api_key = os.getenv("REQRES_API_KEY", "DUMMY_KEY")
     session.headers.update({
         "Authorization": f"Bearer {api_key}",
